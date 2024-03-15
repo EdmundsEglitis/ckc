@@ -1,6 +1,6 @@
-CREATE DATABASE ckc_lieknins;
+CREATE DATABASE ckc_edmunds;
 
-USE ckc_lieknins;
+USE ckc_edmunds;
 
 CREATE TABLE ckc_events (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
