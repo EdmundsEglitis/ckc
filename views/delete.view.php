@@ -27,7 +27,8 @@
     <h1>Press on any off them to delete em</h1>
     <form action="">
         <?php foreach($events as $event) { ?>
-            <button name="id" value=<?= $event["id"] ?> ><?= $event["event"] ?></button>
+            
+            <button name="id" value=<?= $event["id"] ?> <?=htmlspecialchars($event["event"])?> </button>
         <?php }; ?>
     </form>
 </body>

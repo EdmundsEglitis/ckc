@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <?php require "components/navbar.php" ?>
@@ -12,12 +14,13 @@
     <form>
         <label>
             When YYYY-DD-MM HH-MM-SS:
-            <input type="text" name="when">
+            <input class="create" type="text" name="when">
             Event:
-            <input type="text" name="event">
+            <input class="create" type="text" name="event">
             Where:
-            <input type="text" name="where">
+            <input class="create" type="text" name="where">
         </label>
+        
         <button>Submit</button>
     </form>
 </body>
