@@ -28,7 +28,7 @@
 <body>
     <h1>Press on any off them to edit</h1>
     <?php if(isset($_GET["id"])) { ?>
-        <h1>Current result:  <?= $events[0]["datetime"], " / ", $events[0]["event"], " / ", $events[0]["place"] ?> </h1>
+        <h1>Current result:  <?= htmlspecialchars($events[0]["datetime"]), " / ", htmlspecialchars($events[0]["event"]), " / ", htmlspecialchars($events[0]["place"]) ?> </h1>
         <form>
             <label>
                 Date time (YYYY-DD-MM HH-MM-SS):
@@ -47,7 +47,7 @@
     <?php }else{; ?>
     <form>
         <?php foreach($events as $event) { ?>
-            <button name="id" value=<?= $event["id"] ?> ><?= $event["event"] ?></button>
+            <button name="id" value=<?= $event["id"] ?> ><?= htmlspecialchars($event["event"]) ?></button>
         <?php }; ?>
     </form>
     <?php }; ?>

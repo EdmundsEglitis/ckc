@@ -10,8 +10,9 @@ $routes=[
     "/kolektivi"=>"controllers/kolektivi.php",
     "/add"=>"controllers/add.php",
     "/delete"=>"controllers/delete.php",
-    "/edit"=>"controllers/edit.php"
-    
+    "/edit"=>"controllers/edit.php",
+    "/show"=>"controllers/show.php",
+    "/showkolektivi"=>"controllers/kolektivi.show.php",
   ];
   
 

@@ -26,8 +26,8 @@
   <tr>
     <?php foreach($kolektivi as $kolektivs) { ?>
     <tr>
-      <td> <?= htmlspecialchars($kolektivs["name"])  ?></td>
-      <td> <?= htmlspecialchars($kolektivs["description"])  ?></td>
+      <td> <a href="/showkolektivi?id=<?=$kolektivs["id"]?>" > <?= htmlspecialchars($kolektivs["name"])  ?> </a> </td>
+      <td> <a href="/showkolektivi?id=<?=$kolektivs["id"]?>" > <?= htmlspecialchars($kolektivs["description"])  ?> </a> </td>
     </tr>
     <?php } ?>
   </tr>

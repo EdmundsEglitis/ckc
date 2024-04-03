@@ -28,7 +28,7 @@
     <form action="">
         <?php foreach($events as $event) { ?>
             
-            <button name="id" value=<?= $event["id"] ?> <?=htmlspecialchars($event["event"])?> </button>
+            <button name="id" value=<?= $event["id"] ?> > <?= htmlspecialchars($event["event"]) ?> </button>
         <?php }; ?>
     </form>
 </body>

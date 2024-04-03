@@ -26,7 +26,7 @@ if(empty($errors)){
     $db->execute($query, $params);
 
     header('Location: '. "/");
-    //die();
+    die();
 }
 }
 
