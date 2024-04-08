@@ -1,17 +1,15 @@
 <?php
-
+require "validator.php";
 require "Database.php";
+
 $config = require "config.php";
 $db = new Database($config);
 if(isset($_GET["when"]) && isset($_GET["event"]) && isset($_GET["where"])){
 $errors = [];
-if(trim($_GET["event"]) == "") {
-    $errors["event"] = "da event is empty blud";
+if(!Validator::string($_GET["event"], min: 1, max: 255)) {
+    $errors["event"] = "da title invaliids";
 }
 
-if(strlen($_GET["event"]) > 255) {
-    $errors["event"] = "da event is too long you twat";
-}
 
 if(empty($errors)){
     $query = "INSERT INTO ckc_events (datetime,event,place)

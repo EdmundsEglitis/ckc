@@ -17,6 +17,9 @@
             <input class="create" type="text" name="when">
             Event:
             <input class="create" type="text" name="event">
+            <?php if (isset($errors["event"])) { ?>
+                <p class="invalid-data"><?= $errors["event"] ?></p>
+        <?php } ?>
             Where:
             <input class="create" type="text" name="where">
         </label>
